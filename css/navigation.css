@@ -1,0 +1,35 @@
+.navigation {
+  background-color: darkcyan;
+}
+
+.navigation__container {
+  display: flex;
+  width: 100%;
+  padding: 40px 20px;
+}
+
+.navigation__item {
+  padding: 0 10px 0 4px;
+  color: white;
+  font-size: 1.4rem;
+  text-decoration: none;
+  transition: color .3s;
+}
+
+.navigation__item::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: black;
+  transition: width .3s;
+}
+
+.navigation__item:hover {
+  color: black;
+}
+
+.navigation__item:active::after,
+.navigation__item:hover::after {
+  width: 100%;
+}

@@ -1,0 +1,17 @@
+.button {
+  padding: 10px 20px;
+  text-align: center;
+  outline: none;
+  border: none;
+  background-color: cornflowerblue;
+  color: white;
+  transition: background-color, 1s ease;
+  border-radius: 16px;
+}
+
+.button:hover,
+.button:active {
+  background-color: darkblue;
+  color: white;
+  transform: scale(1.05);
+}

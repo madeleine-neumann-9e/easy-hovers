@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/navigation.css">
+  <link rel="stylesheet" href="css/buttons.css">
+  <title>Document</title>
+</head>
+<body>
+  <nav class="navigation">
+    <div class="container navigation__container">
+      <a href="#" class="navigation__item">First</a>
+      <a href="#" class="navigation__item">Second</a>
+      <a href="#" class="navigation__item">Third</a>
+      <a href="#" class="navigation__item">Fourth</a>
+      <a href="#" class="navigation__item">Fifth</a>
+    </div>
+  </nav>
+  <div class="container">
+    <h2>Code for Navigation</h2>
+    <div class="two-columns">
+      <div>
+        <h3>CSS:</h3>
+        <pre>
+          <code>
+            .navigation {
+              background-color: darkcyan;
+            }
+
+            .navigation__container {
+              display: flex;
+              width: 100%;
+              padding: 40px 20px;
+            }
+
+            .navigation__item {
+              padding: 0 10px 0 4px;
+              color: white;
+              font-size: 1.4rem;
+              text-decoration: none;
+              transition: color .3s;
+            }
+
+            .navigation__item::after {
+              content: '';
+              display: block;
+              width: 0;
+              height: 2px;
+              background: black;
+              transition: width .3s;
+            }
+
+            .navigation__item:hover {
+              color: black;
+            }
+
+            .navigation__item:active::after,
+            .navigation__item:hover::after {
+              width: 100%;
+            }
+          </code>
+        </pre>
+      </div>
+      <div>
+        <h3>HTML:</h3>
+        <pre>
+          <code>
+            &lt;nav class="navigation">
+              &lt;div class="container navigation__container">
+                &lt;a href="#" class="navigation__item">First&lt;/a>
+                &lt;a href="#" class="navigation__item">Second&lt;/a>
+                &lt;a href="#" class="navigation__item">Third&lt;/a>
+                &lt;a href="#" class="navigation__item">Fourth&lt;/a>
+                &lt;a href="#" class="navigation__item">Fifth&lt;/a>
+              &lt;/div>
+            &lt;/nav>
+          </code>
+        </pre>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

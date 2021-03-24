@@ -1,0 +1,25 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 90vw;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.two-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+pre code {
+  background-color: rgb(24, 24, 24);
+  border: 1px solid whitesmoke;
+  color: limegreen;
+  display: block;
+  padding: 20px;
+}
